@@ -1,0 +1,39 @@
+{
+  "name": "flow-usage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "anywhere --port 12306",
+    "watch": "webpack -w",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiasm/flow-usage.git"
+  },
+  "author": "jiasm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jiasm/flow-usage/issues"
+  },
+  "homepage": "https://github.com/Jiasm/flow-usage#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "flow-bin": "^0.57.3",
+    "webpack": "^3.8.1"
+  }
+}
