@@ -9020,6 +9020,10 @@ module.exports = function (regExp, replace) {
 "use strict";
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 function say(str) {
   console.log(str);
 
@@ -9029,6 +9033,43 @@ function say(str) {
 var result = say('123');
 
 console.log(result);
+
+function createEle(tag) {
+  return document.createElement(tag);
+}
+
+function append(node) {
+  var tag = document.querySelector('body');
+  if (tag) {
+    tag.appendChild(node);
+  }
+}
+
+var $wrap = createEle('div');
+var $title = createEle('h1');
+
+$title.innerHTML = 'Hello World';
+$wrap.appendChild($title);
+
+append($wrap);
+
+var Test = function () {
+  function Test() {
+    _classCallCheck(this, Test);
+  }
+
+  _createClass(Test, [{
+    key: 'log',
+    value: function log(msg) {
+      console.log(msg);
+    }
+  }]);
+
+  return Test;
+}();
+
+var test = new Test();
+test.log('123');
 
 /***/ })
 /******/ ]);
