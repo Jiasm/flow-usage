@@ -1,6 +1,6 @@
 options:
   formatter: json
-  merge-default-rules: false
+  merge-default-rules: true
 files:
   include: '**/*.s+(a|c)ss'
   ignore: '**/ignored.s+(a|c)ss'
